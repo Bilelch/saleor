@@ -398,6 +398,13 @@ export interface ProductTypeInput {
   taxRate?: TaxRateType | null;
 }
 
+export interface StaffCreateInput {
+  email?: string | null;
+  note?: string | null;
+  permissions?: (string | null)[] | null;
+  sendPasswordEmail?: boolean | null;
+}
+
 //==============================================================
 // END Enums and Input Objects
 //==============================================================
